@@ -10,6 +10,9 @@
 % this is package for algorithm 
 \usepackage{algorithm}
 \usepackage{algorithmic}
+% adding many math symbol
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \begin{document}
 \title{This is My Paper broh}
@@ -38,6 +41,8 @@ This is an example of equation
 $ \sqrt[n]{1+x+x^2+x^3+\ldots} $
 
 The equation again is $ x_i = y_i^f $
+
+
 
 \section{Methodologies}
 \label{sec:meth}
@@ -69,6 +74,7 @@ Generally want the most probable hypothesis given the training data
 $ \omega  \sigma \Sigma $
 
 
+
 \section{Result and Discussion}
 
 %writing algorithm in latex
@@ -89,11 +95,27 @@ $ \omega  \sigma \Sigma $
 	\label{algo:stupid}
 \end{algorithm}
 
+\section{Math Symbol}
+This is inline $n$ math symbol $\frac{n}{2}$
+$
+\left[
+	\begin{array}{ccc}
+	1&2&3\\
+	1&5&6\\
+	1&6&8
+	\end{array}
+\right]
+$
+
+
+
 \section{Conclusion}
 In this section we can see in the algorithm on section \ref{algo:stupid} .
 
-\section{References}
 
+\section{References}
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEexample}
+
+
 \end{document}
