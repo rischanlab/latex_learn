@@ -1,0 +1,93 @@
+\documentclass[conference]{IEEEtran}
+% this is package for cite
+\usepackage{cite}
+% this is package for algorithm 
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\begin{document}
+\title{This is My Paper broh}
+\author{
+	\IEEEauthorblockN{Rischan, Mafrur}
+	\IEEEauthorblockA{School of Electrical Engineering\\
+	Chonnam National University\\
+	Gwangju, South Korea\\
+	Email : rischanlab@gmail.com}
+}
+
+\maketitle
+
+\begin{abstract}
+This is abtract of my paper
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+In this intro we can make a references to the Methodologies section ~\ref{sec:meth} . According to \cite{contoh1}
+In this section I just wanna to try using basic formating
+First on is about \textbf{Bold} and then \textit{Italic} and the last is {\it Just try i dont know what is this} 
+
+We can use also \huge{huge} \normalsize{Normalize}
+This is an example of equation
+$ \sqrt[n]{1+x+x^2+x^3+\ldots} $
+
+The equation again is $ x_i = y_i^f $
+
+\section{Methodologies}
+\label{sec:meth}
+
+
+
+Generally want the most probable hypothesis given the training data
+
+
+{\huge Bayes Theorem  }
+
+\[ P(h|D) = \frac{P(D|h) P(h)}{P(D)} \]
+
+
+ $P(h)$ = prior probability of hypothesis $h$
+ $P(D)$ = prior probability of training data $D$
+ $P(h|D)$ = probability of $h$ given $D$
+ $P(D|h)$ = probability of $D$ given $h$
+
+{\em Maximum a posteriori} hypothesis $h_{MAP}$:
+\begin{eqnarray}
+& h_{MAP} & = \arg \max_{h \in H} P(h|D)\nonumber \\
+& & = \arg \max_{h \in H} \frac{P(D|h) P(h)}{P(D)} \nonumber \\
+& & = \arg \max_{h \in H}P(D|h) P(h) \nonumber
+\end{eqnarray}
+
+\bigskip
+
+$ \omega  \sigma \Sigma $
+
+
+\section{Result and Discussion}
+
+%writing algorithm in latex
+
+\section{Algorithm in LaTex}
+\begin{algorithm}
+	\begin{algorithmic}
+		\STATE Short the input set $S_i$
+		\STATE Binary Search for $x$ in $S_i$
+			\FORALL {$i$ in $S_i$}
+				\STATE find $x$ in $S_i$ such that $x$ = $i$
+				\IF {$x$ = 0}
+					\STATE { $x$ was less than the minimum threshold }
+					\ENDIF
+			\ENDFOR 
+	\end{algorithmic}
+	\caption{Algorithm for stupid work}
+	\label{algo:stupid}
+\end{algorithm}
+
+\section{Conclusion}
+In this section we can see in the algorithm on section \ref{algo:stupid} .
+
+\section{References}
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEexample}
+\end{document}
