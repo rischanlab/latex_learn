@@ -7,12 +7,25 @@
 \documentclass[conference]{IEEEtran}
 % this is package for cite
 \usepackage{cite}
+\usepackage{caption}
+\usepackage{refstyle}
 % this is package for algorithm 
 \usepackage{algorithm}
 \usepackage{algorithmic}
 % adding many math symbol
 \usepackage{amsmath}
 \usepackage{amssymb}
+
+%this package is for tabling
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+%sub figure
+\usepackage{subcaption}
+\usepackage{hyperref}
+
+
+
 
 \begin{document}
 \title{This is My Paper broh}
@@ -107,10 +120,42 @@ $
 \right]
 $
 
+$
+\left(
+	\begin{array}{ccc}
+	1&2&3\\
+	1&5&6\\
+	1&6&8
+	\end{array}
+\right)
+$
 
+\section{Table}
+In this section i want to try insert table on latex document 
+\begin{table}
+	\caption{Table 1.1}
+	\label{table:gembus}
+	\centering
+	\begin{tabular}{|l|r|cc|}
+	\hline
+	Account & Amount & Date & Time\\
+	\hline 
+	Stamps & \$ 4.5&3/4/2 & 9am\\
+	Paper &\$46 & 3/5/6 & 2pm\\
+	&&&\\
+	&&&\\
+	\hline
+	\end{tabular}
+\end{table}
 
 \section{Conclusion}
-In this section we can see in the algorithm on section \ref{algo:stupid} .
+In this section we can see in the algorithm on section \ref{algo:stupid} . In this section I also try to insert figure on the document. You gan see on the Table \ref{table:gembus}. This just testing.
+\begin{figure}
+	\includegraphics[scale=0.5]{test.png}
+	\caption{This is Figure 1}
+	\label{fig:gambar}
+\end{figure}
+Please see on \figref{gambar} this figure explain about box blot.
 
 
 \section{References}
